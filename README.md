@@ -26,8 +26,25 @@ For more details, please refer to the [published paper](https://doi.org/10.3390/
 The dataset generation tools have been tested on the following system configuration:
 
 - **Operating System:** Ubuntu 22.04 LTS
-- **Python Version:** 3.x (tested with Python 3.x)
+- **Python Version:** 3.10
 - **Dependencies:** Make sure all required dependencies for the scripts are installed.
+#### Setting Up a Virtual Environment
+
+To ensure all dependencies are managed correctly, you need to create and activate a virtual environment. Follow these steps:
+
+1. Install `venv` Package (if not already installed):
+```bash
+apt install python3.10-venv
+```
+2. Create the Virtual Environment:
+```bash
+python3 -m venv /path/to/projectaria_tools_python_env
+```
+3. Activate the Virtual Environment:
+```bash
+source /path/to/projectaria_tools_python_env/bin/activate
+```
+> ⚠️ **IMPORTANT:** Ensure the virtual environment is activated before running any dataset generation scripts.
 
 ### Dataset Download
 
