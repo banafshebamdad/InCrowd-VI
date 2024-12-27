@@ -21,6 +21,14 @@ For more details, please refer to the [published paper](https://doi.org/10.3390/
 
 ## Getting Started
 
+### Requirements
+
+The dataset generation tools have been tested on the following system configuration:
+
+- **Operating System:** Ubuntu 22.04 LTS
+- **Python Version:** 3.x (tested with Python 3.x)
+- **Dependencies:** Make sure all required dependencies for the scripts are installed.
+
 ### Dataset Download
 
 The dataset and associated tools are publicly available at: [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vault-data/incrowd-vi)
@@ -29,11 +37,45 @@ The dataset and associated tools are publicly available at: [**InCrowd-VI Datase
 
 ### Usage
 
-#### Extract Data
+### Extract Data
+The dataset was collected with [Meta Aria Project glasses](https://www.projectaria.com/) worn by a walking person. Aria data is recorded using VRS, an open source file format. To extract data from `.vrs` files, use the provided scripts located in the `tools/dataset_generation` directory. These scripts process the `.vrs` file to retrieve calibration information, undistort images, extract stereo and RGB images, and IMU data.
+
+#### Required Scripts
+
+Ensure you download the following scripts from the `tools/dataset_generation` directory:
+- `bb_accessing_device_calibration.py`  
+- `bb_generate_dataset_in_loop.sh`  
+- `bb_image_undistortion.py`  
+- `bb_extract_IMU_data.py`  
+- `bb_generate_sequence_ns.sh`  
+
+These scripts must be placed in the same directory before proceeding.
+
+#### Steps to Extract Data
+
+##### 1. Download the Scripts
+
+Obtain all the scripts listed above from the `tools/dataset_generation` directory of this repository. Place them in a directory where you intend to run the data extraction process.
+
+##### 2. Select Files for Extraction
+
+Open the `bb_generate_dataset_in_loop.sh` script and locate the `files=(...)` sections, which list `.vrs` files categorized by location.  
+**Uncomment only one block** corresponding to the location or category of `.vrs` files you wish to extract.  
+
+> ⚠️ **IMPORTANT:** Ensure that only one `files=(...)` block is uncommented at a time to avoid unintended behavior.
+
+##### 3. Run the Data Generation Script
+
+Execute the `bb_generate_dataset_in_loop.sh` script by running the following command in your terminal:
+
+```bash
+bash bb_generate_dataset_in_loop.sh
+```
+
 
 #### Evaluation
 
-## Citation
+# Citation
 
 If you use this dataset in an academic context, please cite the following paper:
 
@@ -43,11 +85,11 @@ If you use this dataset in an academic context, please cite the following paper:
 > [https://doi.org/10.3390/s24248164](https://doi.org/10.3390/s24248164)
 
 
-## Acknowledgments
+# Acknowledgments
 
 Special thanks to the **Robotics and Perception Group** at the **University of Zurich** for providing the Meta Aria glasses used in this study.
 
-## Support
+# Support
 
 If you have any questions or encounter issues, please create an [issue](https://github.com/banafshebamdad/InCrowd-VI/issues) in this repository.  
 We will address it as soon as possible.
