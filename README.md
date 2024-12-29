@@ -20,7 +20,7 @@ For more details, please refer to the [published paper](https://doi.org/10.3390/
 
 ## File Structure
 
-Details on the file structure for each sequence are available on the [[Sequnce File Structure]] page. Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
+Details on the file structure for each sequence are available on the [Sequnce File Structure](https://github.com/banafshebamdad/InCrowd-VI/wiki/Sequence-File-Structure) page. Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
 
 ---
 
