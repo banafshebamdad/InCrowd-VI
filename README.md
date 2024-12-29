@@ -17,6 +17,11 @@ For more details, please refer to the [published paper](https://doi.org/10.3390/
   - Ground-truth trajectories (accuracy ~2 cm).
   - Semi-dense 3D point clouds for each sequence.
 - Captures real-world challenges such as varying crowd densities, occlusions, reflective surfaces, and lighting conditions.
+
+## File Structure
+
+Details on the file structure for each sequence are available on the [[Dataset File Structure]] page. Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
+
 ---
 
 ## Getting Started
