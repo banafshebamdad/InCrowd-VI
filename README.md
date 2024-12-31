@@ -1,14 +1,14 @@
 # InCrowd-VI Dataset
 
-**InCrowd-VI** is a realistic visual-inertial dataset designed for evaluating Simultaneous Localization and Mapping (SLAM) systems in indoor pedestrian-rich environments. This dataset is particularly aimed at advancing navigation technologies for the visually impaired.
+**InCrowd-VI** is a realistic visual-inertial dataset designed for evaluating Simultaneous Localization and Mapping (SLAM) systems in indoor pedestrian-rich environments. This dataset is particularly aimed at advancing navigation technologies for visually impaired individuals.
 
-For more details, please refer to the [published paper](https://doi.org/10.3390/s24248164).
+For more details, please refer to the accompanying [published paper](https://doi.org/10.3390/s24248164).
 
 > ⚠️ **Note:** The documentation is in progress and will be available soon.
 
 ## Features
 
-- **58 sequences** captured across diverse indoor public spaces (e.g., airports, train stations, libraries).
+- **58 sequences** captured across various indoor public spaces (e.g., airports, train stations, museums, and university libraries).
 - **5 km total trajectory length** with 1.5 hours of recording time.
 - Data includes:
   - RGB images (1408 × 1408 resolution, 30 FPS).
@@ -16,7 +16,7 @@ For more details, please refer to the [published paper](https://doi.org/10.3390/
   - IMU measurements (1000 Hz and 800 Hz).
   - Ground-truth trajectories (accuracy ~2 cm).
   - Semi-dense 3D point clouds for each sequence.
-- Captures real-world challenges such as varying crowd densities, occlusions, reflective surfaces, and lighting conditions.
+- **Captures real-world challenges** such as varying crowd densities, occlusions, reflective surfaces, and lighting conditions.
 
 ## File structure
 
@@ -36,13 +36,13 @@ The dataset generation tools have been tested on the following system configurat
 ```bash
 sudo apt install python3.10-venv
 ```
-To extract images from `.vrs` files, the `projectaria_tools` Python package is required. This package provides utilities for handling `.vrs` files effectively. For detailed information about the package, refer to the official Meta documentation:
+To extract images from `.vrs` files, the `projectaria_tools` Python package is required. For detailed information about the package, refer to the official Meta documentation:
 > - [Getting Started with Data Utilities](https://facebookresearch.github.io/projectaria_tools/docs/data_utilities/getting_started)
 > - [Installation Instructions for Python](https://facebookresearch.github.io/projectaria_tools/docs/data_utilities/installation/installation_python)
 
 #### Step 1. Setting up a virtual environment
 
-You must create and activate a virtual environment to manage all dependencies correctly. 
+To manage dependencies:
 ```bash
 python3 -m venv $HOME/projectaria_tools_python_env
 source $HOME/projectaria_tools_python_env/bin/activate
@@ -50,18 +50,14 @@ source $HOME/projectaria_tools_python_env/bin/activate
 > ⚠️ **IMPORTANT:** Ensure the virtual environment is activated before running any dataset generation scripts.
 
 #### Step 2. Install projectaria_tools
-Once the virtual environment is activated, upgrade pip and install the projectaria_tools package from PyPI:
+Upgrade pip and install the package:
 ```bash
 python3 -m pip install --upgrade pip
 python3 -m pip install projectaria-tools'[all]'
 ```
-#### Step 3. Install dependency packages
-```bash
-python3 -m pip install imageio numpy
-```
 ### Dataset download
 
-The dataset and associated tools are publicly available at: [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vault-data/incrowd-vi)
+The dataset sequences are publicly available at: [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/)
 
 ### Extract data
 The dataset was collected with [Meta Aria Project glasses](https://www.projectaria.com/) worn by a walking person. Aria data is recorded using VRS, an open-source file format. To extract data from `.vrs` files, use the provided scripts located in the `tools/dataset_generation` directory. These scripts process the `.vrs` file to undistort images and extract stereo and RGB images.
@@ -79,23 +75,22 @@ These scripts must be placed in the same directory before proceeding.
 
 ##### 1. Download the scripts
 
-Obtain all the above scripts from this repository's `tools/dataset_generation` directory. Place them in a directory where you intend to run the data extraction process.
+Download the required scripts from the repository's tools/dataset_generation directory. Place them in the desired directory.
 
-##### 2. Select files for extraction
-
-Open the `bb_generate_dataset_in_loop.sh` script and locate the `files=(...)` sections, which list `.vrs` files categorized by location.  
-**Uncomment only one block** corresponding to the location or category of `.vrs` files you wish to extract.
+##### 2. Select `.vrs` files for extraction 
+Download the `.vrs` files from the [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/data/). Then, open the `bb_generate_dataset_in_loop.sh` script and modify the `files=(...)` section.
+Uncomment the block corresponding to the `vrs` files you want to process.
 
 ##### 3. Run the data generation script
 
-Execute the `bb_generate_dataset_in_loop.sh` script by running the following command in your terminal: 
+Execute the script: 
+```bash
+bash bb_generate_dataset_in_loop.sh
+```
 > ⚠️ **IMPORTANT:** Ensure the virtual environment is activated before running this script.
 > 
 > ⚠️ **IMPORTANT:** Ensure that only one `files=(...)` block is uncommented at a time to avoid unintended behavior.
 
-```bash
-bash bb_generate_dataset_in_loop.sh
-```
 
 # Citation
 
