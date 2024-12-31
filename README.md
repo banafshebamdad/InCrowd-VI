@@ -30,27 +30,32 @@ Details on the file structure for each sequence are available on the [Sequnce Fi
 
 The dataset generation tools have been tested on the following system configuration:
 
-- **Operating System:** Ubuntu 22.04 LTS
-- **Python Version:** 3.10
-- **Dependencies:** Make sure all required dependencies for the scripts are installed.
-#### Setting Up a Virtual Environment
-
-To ensure all dependencies are managed correctly, you need to create and activate a virtual environment. Follow these steps:
-
-1. Install `venv` Package (if not already installed):
+- **Operating system:** Ubuntu 22.04 LTS
+- **Python version:** 3.10
+- **Dependencies:**
 ```bash
-apt install python3.10-venv
+sudo apt install git
+sudo apt install python3.10-venv
 ```
-2. Create the Virtual Environment:
+To extract images from `.vrs` files, the `projectaria_tools` Python package is required. This package provides utilities for handling `.vrs` files effectively. For detailed information about the package, refer to the official Meta documentation:
+> - [Getting Started with Data Utilities](https://facebookresearch.github.io/projectaria_tools/docs/data_utilities/getting_started)
+> - [Installation Instructions for Python](https://facebookresearch.github.io/projectaria_tools/docs/data_utilities/installation/installation_python)
+
+#### Step 1. Setting up a virtual environment
+
+You must create and activate a virtual environment to manage all dependencies correctly. 
 ```bash
-python3 -m venv /path/to/projectaria_tools_python_env
-```
-3. Activate the Virtual Environment:
-```bash
-source /path/to/projectaria_tools_python_env/bin/activate
+python3 -m venv $HOME/projectaria_tools_python_env
+source $HOME/projectaria_tools_python_env/bin/activate
 ```
 > ⚠️ **IMPORTANT:** Ensure the virtual environment is activated before running any dataset generation scripts.
 
+#### Step 2. Install projectaria_tools
+Once the virtual environment is activated, upgrade pip and install the projectaria_tools package from PyPI:
+```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install projectaria-tools'[all]'
+```
 ### Dataset Download
 
 The dataset and associated tools are publicly available at: [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vault-data/incrowd-vi)
