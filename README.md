@@ -34,8 +34,8 @@ The dataset generation tools have been tested on the following system configurat
 - **Python version:** 3.10
 - **Dependencies:**
 ```bash
-sudo apt install git
-sudo apt install python3.10-venv
+python3 -m venv $HOME/projectaria_tools_python_env
+source $HOME/projectaria_tools_python_env/bin/activate
 ```
 To extract images from `.vrs` files, the `projectaria_tools` Python package is required. This package provides utilities for handling `.vrs` files effectively. For detailed information about the package, refer to the official Meta documentation:
 > - [Getting Started with Data Utilities](https://facebookresearch.github.io/projectaria_tools/docs/data_utilities/getting_started)
