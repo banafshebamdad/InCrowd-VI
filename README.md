@@ -3,9 +3,14 @@ A realistic visual-inertial dataset with 58 sequences spanning 5km of trajectori
 
 For more details, please refer to the accompanying [published paper](https://doi.org/10.3390/s24248164).
 
-## File structure
+## File structure and documentation
 
-Details on the file structure for each sequence are available on the [Sequence File Structure](https://github.com/banafshebamdad/InCrowd-VI/wiki/Sequence-File-Structure) page. Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
+Details on the file structure for each sequence are available on the [Sequence file structure](https://github.com/banafshebamdad/InCrowd-VI/wiki/Sequence-File-Structure) page. 
+Additionally, you can find related documentation in the repository:
+- [Calibration data](Calibration-Data): Calibration parameters for cameras and IMUs used in the dataset.
+- [InCrowd-VI sequences](InCrowd-Vi-Sequences): Overview of sequences with density categories and main challenges.
+  
+Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
 
 ---
 
