@@ -45,11 +45,11 @@ python3 -m pip install projectaria-tools'[all]'
 The dataset sequences are publicly available at: [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/)
 
 ### Extract data
-The dataset was collected with [Meta Aria Project glasses](https://www.projectaria.com/) worn by a walking person. Aria data is recorded using VRS, an open-source file format. To extract data from `.vrs` files, use the provided scripts located in the `tools/dataset_generation` directory. These scripts process the `.vrs` file to undistort images and extract stereo and RGB images.
+The dataset was collected with [Meta Aria Project glasses](https://www.projectaria.com/) worn by a walking person. Aria data is recorded using VRS, an open-source file format. To extract data from `.vrs` files, use the provided scripts located in the [tools/dataset_generation](https://github.com/banafshebamdad/InCrowd-VI/tree/main/tools/dataset_generation) directory. These scripts process the `.vrs` file to undistort images and extract stereo and RGB images.
 
 #### Required scripts
 
-Ensure you download the following scripts from the `tools/dataset_generation` directory:
+Ensure you download the following scripts from the [tools/dataset_generation](https://github.com/banafshebamdad/InCrowd-VI/tree/main/tools/dataset_generation) directory:
 - `bb_generate_dataset_in_loop.sh`: Processes multiple `.vrs` files sequentially using the `bb_generate_sequence_ns.sh` script.
 - `bb_generate_sequence_ns.sh`: Extracts and undistorts images from a `.vrs` file, organizes them by sensor type and timestamp unit, and generates a `timestamps.txt` file.
 - `bb_image_undistortion.py`: Processes `.vrs` files to extract and undistort RGB and stereo images, saving both original and undistorted images with timestamps as filenames.
@@ -60,7 +60,7 @@ These scripts must be placed in the same directory before proceeding.
 
 ##### 1. Download the scripts
 
-Download the required scripts from the repository's tools/dataset_generation directory. Place them in the desired directory.
+Download the required scripts from the repository's [tools/dataset_generation](https://github.com/banafshebamdad/InCrowd-VI/tree/main/tools/dataset_generation) directory. Place them in the desired directory.
 
 ##### 2. Select `.vrs` files for extraction 
 Download the `.vrs` files from the [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/data/). Then, open the `bb_generate_dataset_in_loop.sh` script and modify the `files=(...)` section.
