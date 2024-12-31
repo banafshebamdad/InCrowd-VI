@@ -1,26 +1,11 @@
 # InCrowd-VI Dataset
-
-**InCrowd-VI** is a realistic visual-inertial dataset designed for evaluating Simultaneous Localization and Mapping (SLAM) systems in indoor pedestrian-rich environments. This dataset is particularly aimed at advancing navigation technologies for visually impaired individuals.
+A realistic visual-inertial dataset with 58 sequences spanning 5km of trajectories and 1.5 hours of recordings, designed for evaluating SLAM systems in indoor pedestrian-rich environments. The dataset is particularly aimed at advancing navigation technologies for visually impaired individuals.
 
 For more details, please refer to the accompanying [published paper](https://doi.org/10.3390/s24248164).
 
-> ⚠️ **Note:** The documentation is in progress and will be available soon.
-
-## Features
-
-- **58 sequences** captured across various indoor public spaces (e.g., airports, train stations, museums, and university libraries).
-- **5 km total trajectory length** with 1.5 hours of recording time.
-- Data includes:
-  - RGB images (1408 × 1408 resolution, 30 FPS).
-  - Stereo images (640 × 480 resolution, 30 FPS).
-  - IMU measurements (1000 Hz and 800 Hz).
-  - Ground-truth trajectories (accuracy ~2 cm).
-  - Semi-dense 3D point clouds for each sequence.
-- **Captures real-world challenges** such as varying crowd densities, occlusions, reflective surfaces, and lighting conditions.
-
 ## File structure
 
-Details on the file structure for each sequence are available on the [Sequnce File Structure](https://github.com/banafshebamdad/InCrowd-VI/wiki/Sequence-File-Structure) page. Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
+Details on the file structure for each sequence are available on the [Sequence File Structure](https://github.com/banafshebamdad/InCrowd-VI/wiki/Sequence-File-Structure) page. Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
 
 ---
 
