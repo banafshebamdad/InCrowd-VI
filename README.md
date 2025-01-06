@@ -1,3 +1,10 @@
+# InCrowd-VI: A Realistic Visual–Inertial Dataset for Evaluating SLAM in Indoor Pedestrian-Rich Spaces for Human Navigation
+<p align="center">
+  <b><a href="https://www.mdpi.com/1424-8220/24/24/8164">Paper</a></b> |
+  <b><a href="https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/">InCrowd-VI Dataset</a></b>
+</p>
+
+
 # InCrowd-VI Dataset
 A realistic visual-inertial dataset with 58 sequences spanning 5km of trajectories and 1.5 hours of recordings, designed for evaluating SLAM systems in indoor pedestrian-rich environments. The dataset is particularly aimed at advancing navigation technologies for visually impaired individuals.
 
