@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/banafshebamdad/InCrowd-VI/blob/main/images/InCrowd-VI_seq.png" alt="Example scenes from the InCrowd-VI dataset" width="700">
+  <img src="https://github.com/banafshebamdad/InCrowd-VI/blob/main/images/InCrowd-VI_seq.png" alt="Example scenes from the InCrowd-VI dataset" width="800">
 </p>
-*Example scenes from the InCrowd-VI dataset demonstrating various challenges: (a) high pedestrian density, (b) varying lighting conditions, (c) texture-poor surfaces, (d) reflective surfaces, (e) narrow aisles, and (f) stairs.*
+Example scenes from the InCrowd-VI dataset demonstrating various challenges: (a) high pedestrian density, (b) varying lighting conditions, (c) texture-poor surfaces, (d) reflective surfaces, (e) narrow aisles, and (f) stairs.
 
 
 # InCrowd-VI Dataset
