@@ -4,7 +4,11 @@
   <b><a href="https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/">InCrowd-VI Dataset</a></b>
 </p>
 
-![Example scenes from the InCrowd-VI dataset demonstrating various challenges: (a) high pedestrian density, (b) varying lighting conditions, (c) texture-poor surfaces, (d) reflective surfaces, (e) narrow aisles, and (f) stairs.](https://github.com/banafshebamdad/InCrowd-VI/blob/main/images/InCrowd-VI_seq.png)
+<p align="center">
+  <img src="https://github.com/banafshebamdad/InCrowd-VI/blob/main/images/InCrowd-VI_seq.png" alt="Example scenes from the InCrowd-VI dataset" width="700">
+</p>
+*Example scenes from the InCrowd-VI dataset demonstrating various challenges: (a) high pedestrian density, (b) varying lighting conditions, (c) texture-poor surfaces, (d) reflective surfaces, (e) narrow aisles, and (f) stairs.*
+
 
 # InCrowd-VI Dataset
 A realistic visual-inertial dataset with 58 sequences spanning 5km of trajectories and 1.5 hours of recordings, designed for evaluating SLAM systems in indoor pedestrian-rich environments. The dataset is particularly aimed at advancing navigation technologies for visually impaired individuals.
