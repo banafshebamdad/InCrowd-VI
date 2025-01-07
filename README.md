@@ -95,14 +95,23 @@ bash bb_generate_dataset_in_loop.sh
 > ⚠️ **IMPORTANT:** Ensure that only one `files=(...)` block is uncommented at a time to avoid unintended behavior.
 
 
-# Citation
+## Citation
 
-If you use this dataset in an academic context, please cite the following paper:
+If you use this dataset or refer to the paper, please cite it as follows:
 
-> **Bamdad, M.; Hutter, H.-P.; Darvishy, A.**  
-> **InCrowd-VI: A Realistic Visual–Inertial Dataset for Evaluating Simultaneous Localization and Mapping in Indoor Pedestrian-Rich Spaces for Human Navigation.**  
-> *Sensors*, **2024**, *24*, 8164.  
-> [https://doi.org/10.3390/s24248164](https://doi.org/10.3390/s24248164)
+```bibtex
+@article{bamdad2024incrowd,
+  title={InCrowd-VI: A Realistic Visual--Inertial Dataset for Evaluating Simultaneous Localization and Mapping in Indoor Pedestrian-Rich Spaces for Human Navigation},
+  author={Bamdad, Marziyeh and Hutter, Hans-Peter and Darvishy, Alireza},
+  journal={Sensors},
+  volume={24},
+  number={24},
+  pages={8164},
+  year={2024},
+  publisher={MDPI}
+}
+
+```
 
 
 ## Acknowledgments
