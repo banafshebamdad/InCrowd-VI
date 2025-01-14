@@ -92,7 +92,7 @@ bash bb_generate_dataset_in_loop.sh
 ```
 > ⚠️ **IMPORTANT:** Ensure the virtual environment is activated before running this script.
 > 
-> ⚠️ **IMPORTANT:** Ensure that only one `files=(...)` block is uncommented at a time to avoid unintended behavior.
+> ⚠️ **IMPORTANT:** Ensure that only ONE `files=(...)` block is uncommented at a time to avoid unintended behavior.
 
 
 ## Citation
