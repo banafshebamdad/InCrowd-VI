@@ -2,7 +2,7 @@
 
 #
 # Banafshe Marziyeh Bamdad
-# banafshebamdad@gmail.com, bamdad@ifi.uzh.ch, marziyeh.bamdad@uzh.ch, bamz@zhaw.ch
+# banafshebamdad@gmail.com, bamdad@ifi.uzh.ch, marziyeh.bamdad@uzh.ch
 # Sa Jul 20 06:09 CET
 #
 # This script sequentially processes a list of .vrs files using the bb_generate_sequence_ns.sh command. 
