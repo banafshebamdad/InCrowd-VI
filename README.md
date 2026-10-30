@@ -120,7 +120,10 @@ Special thanks to the **Robotics and Perception Group** at the **University of Z
 
 ## Support
 
-If you have any questions or encounter issues, please create an [issue](https://github.com/banafshebamdad/InCrowd-VI/issues) in this repository. We will address it as soon as possible.
+If you have any questions or encounter issues, please create an [issue](https://github.com/banafshebamdad/InCrowd-VI/issues) in this repository or contact me directly:
 
+**Banafshe Marziyeh Bamdad**  
+Department of Informatics, University of Zurich  
+Email: [bamdad@ifi.uzh.ch](mailto:bamdad@ifi.uzh.ch) | [marziyeh_bamdad@uzh.ch](mailto:marziyeh_bamdad@uzh.ch) | [banafshebamdad@gmail.com](mailto:banafshebamdad@gmail.com).
 
 
