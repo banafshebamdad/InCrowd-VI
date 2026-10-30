@@ -1,6 +1,6 @@
 #
 # Banafshe Marziyeh Bamdad
-# banafshebamdad@gmail.com, bamdad@ifi.uzh.ch, marziyeh.bamdad@uzh.ch, bamz@zhaw.ch
+# banafshebamdad@gmail.com, bamdad@ifi.uzh.ch, marziyeh.bamdad@uzh.ch
 # Mon May 13 2024 15:17:58 CET
 # 
 # This script takes a VRS file, extracts all recorded RGB or SLAM-left and -right data, undistorts them, 
