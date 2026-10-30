@@ -1,7 +1,8 @@
 ## InCrowd-VI: A Realistic Visual–Inertial Dataset for Evaluating SLAM in Indoor Pedestrian-Rich Spaces for Human Navigation
 <p align="center">
   <b><a href="https://www.mdpi.com/1424-8220/24/24/8164">Paper</a></b> |
-  <b><a href="https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/">Dataset</a></b> |
+  <!-- <b><a href="https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/">Dataset</a></b> | -->
+  <b><a href="https://drive.google.com/drive/folders/1qOhn0VpU1Ch4vh1xp9a8ri-4xJrqaAoz">Dataset</a></b> |
   <b><a href="https://github.com/banafshebamdad/InCrowd-VI/issues">Support</a></b>
 </p>
 
@@ -23,7 +24,8 @@ Additionally, you can find related documentation in the repository:
 - [Calibration data](https://github.com/banafshebamdad/InCrowd-VI/wiki/Calibration-Data): Calibration parameters for cameras and IMUs used in the dataset.
 - [InCrowd-VI sequences](https://github.com/banafshebamdad/InCrowd-VI/wiki/InCrowd-Vi-Sequences): Overview of sequences with density categories and main challenges.
   
-Due to the large size of image files, the dataset provides `.vrs` files for each sequence. You can extract the necessary images locally using the tools available in this repository. 
+To reduce the dataset size, pre-extracted images (`left images`, `right images`, and `rgb images`) are not included in the downloadable dataset. Instead, the original `.vrs` recordings are provided, allowing users to extract and undistort the stereo and RGB images locally using the dataset generation tools available in this repository.
+
 
 ---
 
@@ -60,7 +62,15 @@ python3 -m pip install projectaria-tools'[all]'
 ```
 #### Dataset download
 
-The dataset sequences are publicly available at: [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/)
+<!-- The dataset sequences are publicly available at: [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/) -->
+
+The dataset sequences are publicly available at: **[InCrowd-VI Dataset](https://drive.google.com/drive/folders/1qOhn0VpU1Ch4vh1xp9a8ri-4xJrqaAoz)**
+
+The dataset includes the original `.vrs` recordings, calibration data, IMU measurements, ground-truth trajectories, and SLAM outputs.
+
+To reduce the download size, pre-extracted stereo and RGB images are not included. These images can be generated from the `.vrs` recordings using the tools provided in this repository.
+
+Researchers can download individual sequences according to their experimental needs.
 
 #### Extract data
 The dataset was collected with [Meta Aria Project glasses](https://www.projectaria.com/) worn by a walking person. Aria data is recorded using VRS, an open-source file format. To extract data from `.vrs` files, use the provided scripts located in the [tools/dataset_generation](https://github.com/banafshebamdad/InCrowd-VI/tree/main/tools/dataset_generation) directory. These scripts process the `.vrs` file to undistort images and extract stereo and RGB images.
@@ -81,7 +91,11 @@ These scripts must be placed in the same directory before proceeding.
 Download the required scripts from the repository's [tools/dataset_generation](https://github.com/banafshebamdad/InCrowd-VI/tree/main/tools/dataset_generation) directory. Place them in the desired directory.
 
 ###### 2. Select `.vrs` files for extraction 
-Download the `.vrs` files from the [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/data/). Then, open the `bb_generate_dataset_in_loop.sh` script and modify the `files=(...)` section.
+<!-- Download the `.vrs` files from the [**InCrowd-VI Dataset**](https://vault.cloudlab.zhaw.ch/vaults/InCrowd-VI/data/).  -->
+Download the required `.vrs` files from the [InCrowd-VI Dataset](https://drive.google.com/drive/folders/1qOhn0VpU1Ch4vh1xp9a8ri-4xJrqaAoz).
+
+Then, open the `bb_generate_dataset_in_loop.sh` script and modify the `files=(...)` section.
+
 Uncomment the block corresponding to the `vrs` files you want to process.
 
 ###### 3. Run the data generation script
