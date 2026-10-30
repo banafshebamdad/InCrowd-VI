@@ -2,7 +2,7 @@
 
 #
 # Banafshe Marziyeh Bamdad
-# banafshebamdad@gmail.com, bamdad@ifi.uzh.ch, marziyeh.bamdad@uzh.ch, bamz@zhaw.ch
+# banafshebamdad@gmail.com, bamdad@ifi.uzh.ch, marziyeh.bamdad@uzh.ch
 # Do Jul 11 17:42 CET
 #
 
