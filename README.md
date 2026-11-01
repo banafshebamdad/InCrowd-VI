@@ -19,6 +19,8 @@ For more details, please refer to the accompanying [published paper](https://doi
 
 ### File structure and documentation
 
+- [Dataset Directory Structure](https://github.com/banafshebamdad/InCrowd-VI/wiki/Dataset-Directory-Structure): Overview of the downloadable dataset hierarchy, main files, and directories.
+
 Details on the file structure for each sequence are available on the [Sequence file structure](https://github.com/banafshebamdad/InCrowd-VI/wiki/Sequence-File-Structure) page. 
 Additionally, you can find related documentation in the repository:
 - [Calibration data](https://github.com/banafshebamdad/InCrowd-VI/wiki/Calibration-Data): Calibration parameters for cameras and IMUs used in the dataset.
